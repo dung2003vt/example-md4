@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../service/city.js"></script>
+    <script src="../jquery-3.7.0.min.js"></script>
+</head>
+<body onload="findAllCity()">
+<div id="list_city"></div>
+<div id="list_city_views"></div>
+<div id="create_city">
+    <h1>Create form city</h1>
+    <table>
+        <tr>
+            <td><label for="name-c">Name</label></td>
+            <td><input type="text" id="name-c"></td>
+        </tr>
+        <tr><td><label for="country-select" class="form-label">Country</label></td>
+        <td><div id="country-select"></div></td>
+        </tr><tr>
+            <td><label for="area-c">area</label></td>
+            <td><input type="text" id="area-c"></td>
+        </tr><tr>
+
+            <td><label for="population-c">Population</label></td>
+            <td><input type="text" id="population-c"></td>
+        </tr><tr>
+            <td><label for="gdp-c">GDP</label></td>
+            <td><input type="text" id="gdp-c"></td>
+        </tr><tr>
+            <td><label for="introduce-c">Giới thiệu</label></td>
+            <td><input type="text" id="introduce-c"></td>
+        <tr>
+            <td><button onclick="createCity()">Create</button></td>
+            <td><button onclick="findAllCity()">Close</button></td>
+        </tr>
+    </table>
+</div>
+<div id="update_city">
+    <h1>Update form city</h1>
+    <table>
+        <tr>
+            <td><label for="name-c">Name</label></td>
+            <td><input type="text" id="name-u"></td>
+        </tr>
+        <tr><td><label for="country-select-u" class="form-label">Country</label></td>
+            <td><div id="country-select-u"></div></td>
+        </tr><tr>
+        <td><label for="area-u">area</label></td>
+        <td><input type="text" id="area-u"></td>
+    </tr><tr>
+
+        <td><label for="population-u">Population</label></td>
+        <td><input type="text" id="population-u"></td>
+    </tr><tr>
+        <td><label for="gdp-u">GDP</label></td>
+        <td><input type="text" id="gdp-u"></td>
+    </tr><tr>
+        <td><label for="introduce-u">Introduce</label></td>
+        <td><input type="text" id="introduce-u"></td>
+    </tr>
+        <tr>
+            <td><button onclick="updateCity()" >Update</button></td>
+            <td><button onclick="findAllCity()">Close</button></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
